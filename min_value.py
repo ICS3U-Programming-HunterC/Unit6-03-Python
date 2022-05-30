@@ -7,11 +7,11 @@
 import random
 
 
-def get_max_value(array_of_num):
+def get_min_value(array_of_num):
     # declare variable
     min_value = 101
 
-    # find the max value
+    # find the min value
     for a_num in array_of_num:
         if min_value > a_num:
             min_value = a_num
@@ -35,7 +35,7 @@ def main():
         # add the number to the list
         array_of_num.append(random_number)
 
-        min_value = get_max_value(array_of_num)
+        min_value = get_min_value(array_of_num)
         # print the random number generated and the position it is in the list
         print(
             "{} added to the list at position {}".format(array_of_num[counter], counter)
